@@ -5,4 +5,4 @@ ENV TZ=Asia/Shanghai
 
 EXPOSE 8080
 ENTRYPOINT ["/sbin/tini", "--"]
-CMD ["java", "-jar", "/app/bin/reader.jar" ]
+CMD ["java", "-jar", "-Xmx450m",  "/app/bin/reader.jar" ]
